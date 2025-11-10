@@ -30,8 +30,8 @@ nodes:
             node-labels: "ingress-ready=true"
     extraPortMappings:
       - containerPort: 80
-        hostPort: 80
+        hostPort: 8080 # since we use rootless podman
         protocol: TCP
       - containerPort: 443
-        hostPort: 443
+        hostPort: 1443 # since we use rootless podman
         protocol: TCP

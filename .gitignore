@@ -9,3 +9,7 @@ out/
 
 .terraform*
 *terraform.tfstate*
+
+**/*tmp*
+**/*.tar
+*-credential.json
